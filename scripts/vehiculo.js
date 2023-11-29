@@ -1,0 +1,3 @@
+class Vehiculo{
+    #marca;
+}
