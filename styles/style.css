@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;600;700&display=swap');
+
+
+p{
+    color:white;
+    font-family: "Jura";
+}
+
+body{
+    background-image: url("../assets/Carretera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes moverImagen{
+    from{
+        transform: translateX(-100);
+    }
+    to{
+        transform: translateX(1000%);
+    }
+}
+
+#miCochecito{
+    width: 150px;
+    height: 250px;
+    background-image: url('../assets/MicrosoftTeams-image\ \(1\).png');
+    background-size: cover;
+    animation: moverImagen 4s linear infinite;
+}
