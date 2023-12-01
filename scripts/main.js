@@ -71,3 +71,8 @@ for(let key in todoterrenoObject){
         localStorage.setItem(key, todoterrenoObject[key]);
     }
 }
+
+//eliminar un elemento del localStorage
+localStorage.removeItem('color');
+
+localStorage.clear();
