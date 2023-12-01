@@ -7,7 +7,7 @@ p{
 }
 
 body{
-    background-image: url("../assets/Carretera.jpg");
+    background-image: url("../assets/rffrrffrfr.PNG");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,9 +23,65 @@ body{
 }
 
 #miCochecito{
-    width: 150px;
-    height: 250px;
-    background-image: url('../assets/MicrosoftTeams-image\ \(1\).png');
+    width: 250px;
+    height: 350px;
+    background-image: url('../assets/cdcddcd.PNG');
     background-size: cover;
-    animation: moverImagen 4s linear infinite;
+    animation: moverImagen 5s linear infinite;
+}
+
+.ola{
+    color:rgb(103, 0, 0);
+    animation: ola 3s ease-in-out infinite ;
+}
+
+.borde{
+    color: white;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 1px 0 white, .1px 1px 0 white;
+}
+
+@keyframes ola {
+ 
+    0%,
+    100% {
+        clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+ 
+    50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+h1{
+    font-size: 4rem;
+    position: absolute;
+    text-align: center;
+    margin-left: 23%;
+}
+
+span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 41ch;
+    overflow: hidden;
+
+    animation: typing 2s infinite steps(54), blink 5s infinite step-end alternate ;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{border-color: transparent}
+}
+
+span{
+    color:white;
+    font-size: 30px;
+    margin-left: 30%;
 }
